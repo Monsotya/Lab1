@@ -3,7 +3,7 @@ formula = formula.replace(" ", "")
 isFormula = True
 
 # checks if there is a line
-if formula == "":
+if not formula:
     isFormula = False
 
 # checks for wrong number of signs
