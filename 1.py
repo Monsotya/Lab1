@@ -7,4 +7,9 @@ args = parser.parse_args()
 
 # using eval() to calcute given exression
 args.expression = "".join(args.expression)
-print(eval(args.expression))
+try:
+    result = eval(args.expression)
+    print(result)
+except SyntaxError:
+    print("\nError!")
+
