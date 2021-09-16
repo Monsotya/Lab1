@@ -12,4 +12,5 @@ try:
     print(result)
 except SyntaxError:
     print("\nError!")
-
+except NameError:
+    print("\nError!")
